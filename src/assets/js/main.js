@@ -1,1 +1,5 @@
-console.log("시작하기")
+import { menu } from "./menu.js";
+
+window.addEventListener("load", function(){
+    menu();
+});
