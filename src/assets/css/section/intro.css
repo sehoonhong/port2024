@@ -11,7 +11,8 @@
     padding: 16px;
 }
 .intro__title {
-    font-size: 8vw;
+    font-size: 7vw;
+    margin-top: 5vw;
     text-transform: uppercase;
     line-height: 1;
     font-weight: 800;
@@ -49,7 +50,7 @@
     transform: translate(-50%, -50%);
     width: 30vh;
     height: 30vh;
-    border-radius: 50%;
+    border-radius: 20%;
     overflow: hidden;
     filter: grayscale(100%);
     transition: all 0.3s;

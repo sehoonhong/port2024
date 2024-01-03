@@ -1,5 +1,5 @@
 :root {
-    --mainEng-font: "Montserrat";
+    --mainEng-font: "gmarket";
     --mainKor-font: "nanumSquareNeo";
     --mainNum-font: "gmarket";
   
@@ -34,13 +34,13 @@
 }
 
 @media (max-width: 800px) {
-    :root {
+:root {
         font-size: 14px;
         line-height: 1.4;
     }
 }
 
 body {
-    color: var(--black100);
-    background-color: var(--mainBg-color);
+    color: var(--white);
+    background-color: var(--black100);
 }

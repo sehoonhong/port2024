@@ -14,34 +14,29 @@
     font-weight: 900;
     line-height: 1.6;
     font-family: var(--mainKor-font);
-    text-transform: uppercase;
-    color: var(--black100);
-    border-bottom: 0.4vw solid var(--black100);
+    color: var(--white);
+    border-bottom: 0.4vw solid var(--white);
 }
-.skill__title em {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2;
-}
+
 .skill__desc {
     width: 50%;
 }
 .skill__desc span {
-    font-size: 5vw;
+    font-size: 2vw;
     line-height: 1;
     font-weight: 900;
     line-height: 1.3;
     font-family: var(--mainNum-font);
 }
 .skill__desc h3 {
-    font-size: 1.5rem;
-    text-decoration: underline;
-    text-underline-position: under;
-    margin-bottom: 1vw;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 0.3vw;
 }
 .skill__desc p {
-    margin-bottom: 30vh;
-    font-size: 1.1rem;
+    margin-bottom: 5vh;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 @media (max-width: 800px){
@@ -50,17 +45,17 @@
     }
     .skill__title {
         width: 100%;
-        margin-bottom: 10vw;
+        margin-bottom: 5vw;
         font-size: 30px;
         height: auto;
         top: 68px;
-        background-color: var(--mainBg-color);
+        background-color: var(--black100);
     }
     .skill__desc {
         width: 100%;
     }
     .skill__desc span{
-        font-size: 20vw;
+        font-size: 1.2rem;
     }
 
 }
