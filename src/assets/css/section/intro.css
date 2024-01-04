@@ -10,15 +10,32 @@
     flex-direction: column;
     padding: 16px;
 }
-.intro__title {
+.animated__title {
     font-size: 7vw;
     margin-top: 5vw;
-    text-transform: uppercase;
     line-height: 1;
     font-weight: 800;
     white-space: nowrap;
     text-indent: -0.5vw;
     letter-spacing: -0.3vw;
+}
+.animated__title span {
+    position: relative;
+}
+.animated__title span::before {
+    content: "Marketer";
+    color: #81c628;
+    animation: words 20s infinite;
+}
+.animated__title span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 80%;
+    background-color: var(--black100);
+    border-left: 2px solid #81c628;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 .intro__text {
     width: 100%;
@@ -46,11 +63,11 @@
 .intro__text .img {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 80%;
     transform: translate(-50%, -50%);
-    width: 30vh;
+    width: 70vh;
     height: 30vh;
-    border-radius: 20%;
+    border-radius: 5%;
     overflow: hidden;
     filter: grayscale(100%);
     transition: all 0.3s;
@@ -123,6 +140,10 @@
     .intro__inner {
         justify-content: center;
     }
+    .intro__text .img {
+        width: 50vh;
+        height: 30vh;
+    }
     .intro__lines.bottom .line {
         display: block;
     }
@@ -131,7 +152,40 @@
     }
 }
 @media (max-width: 320px){
-    .intro__title {
+    .animated__title {
         display: none;
     }
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #81c628;
+    }
+}
+
+@keyframes words {
+    0%, 20%{
+        content: "Marketer"
+    }
+    21%, 40%{
+        content: "Planner"
+    }
+    41%, 60%{
+        content: "Creator"
+    }
+    61%, 80%{
+        content: "Analysis"
+    }
+    81%, 100%{
+        content: "Writer"
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    } 
 }
