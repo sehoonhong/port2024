@@ -2,9 +2,6 @@
     display: flex;
     justify-content: space-between;
 }
-.port01__inner {
-    padding: 16px;
-}
 .port01__text {
     font-size: 12px;
     text-transform: uppercase;
@@ -73,6 +70,7 @@
     width: 100%;
     text-align: left; margin-bottom: 10px;
 }
+
 .port01__container02 .img{
     width: 100%;
 }
@@ -111,6 +109,21 @@
     transition: all 0.3s;
 }
 .port01__info .right h3:hover em {
+    opacity: 1;
+}
+.port01__info .right h4 {
+    padding: 10px 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+.port01__info .right h4 em {
+    font-size: 12px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.port01__info .right h4:hover em {
     opacity: 1;
 }
 
