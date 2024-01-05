@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="마케터 홍세훈의 포트폴리오 입니다."/>
+    <meta name="keyword" content="포트폴리오, 마케터, portfolio" />
+    <title>HONGSEHOON</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body style="background-color: black;">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#intro">소개 영역 바로가기</a>
+        <a href="#about">스킬 영역 바로가기</a>
+        <a href="#port">포트폴리오 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header" role="banner" style="background-color: var(__black100);">
+        <div class="header__inner">
+            <div class="header__logo">
+                <h1 id="current-time">
+                </h1>
+            </div>
+            <nav class="header__nav" role="navigation" aria-label="메인 메뉴">
+                <ul>
+                    <li><a href="index.html">intro</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#port">portfolio</a></li>
+                    <li><a href="#footer">contact</a></li>
+                </ul>
+            </nav>
+            <div 
+                class="header__nav__mobile" 
+                id="headerToggle" 
+                aria-controls="primary-menu" 
+                aria-expanded="false" 
+                role="button"
+                tabindex="0"
+            >
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <port01 id="port01" role="portfolioinfo">
+        <div class="port01__inner">
+            <div class="port01__info">
+                <div class="left">
+                    <div class="title">
+                        머지맨션 UA 캠페인 </a>
+                    </div>
+                    <p class="desc"> PHASE별 운영 전략을 다르게 하여 국내 매체 및 <br/> 크리에이티브 효율을 테스트한 머지맨션 UA 캠페인</p>
+                </div>
+                <div class="right">
+                    <div class="port01__container">
+                        <h3>Client <em>METACORE, games</em> </h3>
+                        <div class="img">
+                            <img src="assets/img/port02.jpg" alt="종근당건강">
+                        </div>
+                        <p class="about">Mission </p>
+                            <div class="desc"> 
+                                2020년 9월 METACORE, games에서 출시한 모바일 퍼즐 게임 '머지맨션'은 1000만 다운로드를
+                                기록하며 글로벌 단위의 흥행을 거두었습니다.
+                                <br/><br/> 하지만 상대적으로 한국에서의 인지도가 낮아 다운로드 수가 적은 상황이었고 광고주는 국내
+                                유저를 획득하기 위하여 어떤 퍼포먼스 매체와 크리에이티브 전략의 효율이 우수한 지 테스트를 요구하였습니다.
+                            </div>
+                    </div>
+                    <div class="port01__container02">
+                        <h3>Campaign <em>2022</em> </h3>
+                        <div class="img">
+                            <img src="assets/img/port02_container1.jpg" alt="머지맨션">
+                        </div>
+                        <p class="about">UA캠페인 PHASE 1 <em>기여도 70%</em> </p>
+                        <br>
+                        <div class="img">
+                            <img src="assets/img/port02_container2.jpg" alt="머지맨션">
+                        </div>
+                        <p class="about">UA캠페인 PHASE 2 <em>기여도 70%</em> </p>
+                        <br>
+                        <div class="img">
+                            <img src="assets/img/port02_container3.jpg" alt="머지맨션">
+                        </div>
+                        <p class="about">UA캠페인 PHASE 3 <em>기여도 70%</em> </p>
+                    </div>
+                    <div class="port01__container02">
+                        <h3>KEY performance 
+                        <em><br>• 캠페인 이전 대비 MAU 100% 상승 ㅣ 검색량 150% 증대</em> </h3>
+                        <p class="about"> | 퍼포먼스 마케팅 기획 및 운영 </p>
+                        <div class="desc"> 
+                            • PHASE별 크리에이티브 기획
+                            <br> • PHASE별 매체 성과 개선
+                            <br> • 소재 A/B TEST 진행
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </port01>
+    <!-- //port01 -->
+
+    <footer id="footer" role="contentinfo">
+       
+            <div class="footer__right">
+                <a href="index.html">&copy; 2024 HONGSEHOON <br /> </a>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+    <script>
+        let time = document.getElementById("current-time");
+
+        setInterval(() =>{
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        },1000)
+    </script>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
