@@ -1,0 +1,224 @@
+
+.portfolio__inner {
+    margin-top: 10vh;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio__title {
+    top: 70px;
+    left: 0;
+    width: 48%;
+    height: 4vw;
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 2.5;
+    color: var(--white);
+}
+
+.portfolio__title img{
+    width: 80%;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+}
+
+.portfolio__desc {
+    width: 50%;
+    color: var(--black);
+    margin-top: 7%
+}
+.portfolio__desc h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1vh;
+}
+.portfolio__desc h4 em {
+    font-size: 0.8rem;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.portfolio__desc h4:hover em {
+    opacity: 1;
+}
+.portfolio__desc span {
+    font-size: 2.1vw;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.portfolio__desc h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-right: 10%;
+}
+.portfolio__desc h3 p {
+    font-weight: 400;
+    font-size:  1rem;
+}
+.portfolio__content {
+    width: 100%;
+    color: var(--black);
+    margin-top: 3%;
+    padding: 5%;
+}
+.portfolio__content .img {
+    width: 100%;
+}
+.portfolio__content .video {
+    position: relative; 
+    height:0; 
+    padding-bottom: 56.25%; 
+    width: 100%;
+    margin-top: 2%;
+}
+.portfolio__content .name {
+    margin-top: 1vh;
+    font-weight: 400;
+    font-size:  0.8rem;
+    margin-bottom: 2vh;
+}
+
+.portfolio__performance {
+    width: 50%;
+    color: var(--black);
+    padding-left: 5%;
+    left: 0;
+}
+
+.portfolio__performance span {
+    font-weight: 400;
+    font-size:  1rem;
+}
+
+.portfolio__performance p {
+    font-weight: 400;
+    font-size:  1rem;
+}
+
+.portfolio__performance em {
+    font-weight: 700;
+    font-size:  1.1rem;
+    text-transform: uppercase;
+}
+
+#footer__port {
+    color: white;
+}
+.footer__port__inner {
+    margin-top: 7%;
+    padding: 16px;
+    background-color: var(--black);
+}
+.footer__port__text {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+.footer__port__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+.footer__port__info .left {
+    width: 40%;
+}
+.footer__port__info .left .title {
+    border-top: 2px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: url(../../img/arrow.svg) no-repeat right 20px;
+    transition: all 0.3s;
+}
+.footer__port__info .left .title:hover {
+    background-color: var(--white400);
+    padding-left: 10px;
+    border-color: transparent;
+}
+.footer__port__info .left .desc {
+    font-size: 12px;
+    padding-top: 20px;
+}
+.footer__port__info .right {
+    width: 50%;
+}
+.footer__port__info .right h3 {
+    border-top: 2px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+.footer__port__info .right ul {
+    border-top: 1px solid var(--white);
+}
+.footer__port__info .right li {
+    border-bottom: 1px solid var(--white);
+}
+.footer__port__info .right li a {
+    padding: 14px 0;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footer__port__info .right li em {
+    font-size: 12px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.footer__port__info .right li:hover em {
+    opacity: 1;
+}
+.footer__port__right {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px){
+    .portfolio__inner {
+        flex-direction: column;
+    }
+    .portfolio__title {
+        display: none;
+    }
+    .portfolio__desc {
+        width: 100%;
+        padding: 3%;
+    }
+    .portfolio__desc em {
+        font-size: 2.1vw;
+        font-weight: 500;
+    }
+    .portfolio__desc span{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .portfolio__desc h3 p {
+        width: 110%;
+    }
+    .portfolio__desc .img {
+        width: 100%;
+    }
+    .portfolio__desc .video {
+        position: relative; 
+        height:0; 
+        padding-bottom: 56.25%; 
+        width: 100%;
+        margin-top: 4%;
+    }
+    .portfolio__performance {
+        width: 100%;
+        padding-right: 5%;
+    }
+    .footer__port__info {
+        display: none;
+    }
+}
