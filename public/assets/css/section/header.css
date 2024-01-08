@@ -14,7 +14,7 @@
     padding: 1rem;
 }
 .header__logo {
-    width: calc(4rem - 1rem);
+    width: calc(3.5rem - 1rem);
     position: relative;
     margin-top: 2px;
     margin-left: 10px;
