@@ -98,6 +98,7 @@
     text-transform: uppercase;
 }
 .footer__portfolio {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
