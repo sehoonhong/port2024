@@ -51,7 +51,7 @@
         font-size: 20px;
         height: auto;
         top: 68px;
-        background-color: var(--black100);
+        background-color: #292c33;
     }
     .about__desc {
         width: 100%;

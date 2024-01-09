@@ -32,7 +32,7 @@
     position: absolute;
     width: calc(100% + 8px);
     height: 80%;
-    background-color: var(--black100);
+    background-color: #292c33;
     border-left: 2px solid #81c628;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
