@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="마케터 홍세훈의 포트폴리오 입니다."/>
+    <meta name="keyword" content="포트폴리오, 마케터, portfolio" />
+    <title>HONGSEHOON</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body style="background-color: white;">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#intro">소개 영역 바로가기</a>
+        <a href="#about">스킬 영역 바로가기</a>
+        <a href="#port">포트폴리오 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header" role="banner" style="color: black;">
+        <div class="header__inner">
+            <div class="header__logo"> <div class="img">
+                <a href="index.html"><img src="assets/img/favicon.png" alt="로고"></a>
+            </div>
+        </div>
+        <div class="header__sub"> 
+        <h1 id="current-time"></h1>
+        </div>
+    </header>
+    <!-- //header -->
+
+
+        <section id="portfolio">
+            <div class="portfolio__inner">
+                <h2 class="portfolio__title">
+                    <div class="img">
+                        <img src="assets/img/port08_logo.jpg" alt="종근당건강">
+                    </div>
+                </h2>
+                <div class="portfolio__desc">
+                        <h4>CLIENT<em>J'LIM LOS ANGELES</em></h4>
+
+                        <span>J'LIM 소셜 미디어 캠페인</span>
+                        <h3> 
+                         <div>런칭 프로모션을 위한 브랜드 필름 제작 <div>
+                                <br>
+                            <p>
+                                J'LIM LOS ANGELES는 컬러를 재해석하여 디자인된 다양한 제품들을 판매하는
+                                기능성 스트릿 브랜드입니다. 브랜드의 런칭을 홍보할 수 있는 필름 영상 제작을
+                                의뢰받아 연출 및 촬영, 편집 등 전반적인 제작 과정을 담당하였습니다.
+                            </p>
+                        </h3>
+                </div>
+            </section>
+
+            <section id="content">
+                <div class="portfolio__content">
+                    <div class="img">
+                        <img src="assets/img/port08_container.jpg" alt="청정원">
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/sco5-4vyIyc?si=CUlPU_dfvXF7R94B" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" allowfullscreen style="position: absolute; width:100%; height:100%;">
+                        </iframe>
+                    </div>
+                    <div class="name">브랜드 런칭 필름</div>
+                </div>
+                <div class="portfolio__performance">
+                    <span>
+                        브랜드 런칭을 기념하여 J'LIM을 구성하는 Staff들의 프로필 촬영이 제안하였고
+                        비하인드 영상 컨셉으로 이 과정을 기록하여 클라이언트에게 긍정적인 평가를 받았습니다.
+                    </span>
+                    <br><br>
+                </div>
+                <div class="footer__portfolio">
+                    <div class="left">
+                        <p><a href="portfoilo07.html">슈퍼셀 디지털 마케팅</a></p>
+                    </div>
+                    <div class="right">
+                        <h5><a href="portfoilo01.html">종근당건강 퍼포먼스 마케팅</a></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //portfolio -->
+
+    </main>
+    <!-- //main -->
+
+    <footer__port id="footer__port" role="contentinfo">
+        <div class="footer__port__inner">
+            <div class="footer__port__right">
+                <a href="index.html">&copy; 2024 HONGSEHOON <br /> </a>
+            </div>
+        </div>
+    </footer__port>
+    <!-- //footer__port -->
+
+    <script>
+        let time = document.getElementById("current-time");
+
+        setInterval(() =>{
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        },1000)
+    </script>
+    <script type="module" src="assets/js/main.js"></script>
+    
+</body>
+</html>
