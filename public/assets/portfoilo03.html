@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="마케터 홍세훈의 포트폴리오 입니다."/>
+    <meta name="keyword" content="포트폴리오, 마케터, portfolio" />
+    <title>HONGSEHOON</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body style="background-color: white;">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#intro">소개 영역 바로가기</a>
+        <a href="#about">스킬 영역 바로가기</a>
+        <a href="#port">포트폴리오 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header" role="banner" style="color: black;">
+        <div class="header__inner">
+            <div class="header__logo"> <div class="img">
+                <a href="index.html"><img src="assets/img/favicon.png" alt="로고"></a>
+            </div>
+        </div>
+        <div class="header__sub"> 
+        <h1 id="current-time"></h1>
+        </div>
+    </header>
+    <!-- //header -->
+
+
+        <section id="portfolio">
+            <div class="portfolio__inner">
+                <h2 class="portfolio__title">
+                    <div class="img">
+                        <img src="assets/img/port03_logo.jpg" alt="종근당건강">
+                    </div>
+                </h2>
+                <div class="portfolio__desc">
+                        <h4>CLIENT<em>혼마골프</em></h4>
+
+                        <span>혼마골프 디지털 캠페인</span>
+                        <h3> 
+                         <div>타겟 발굴로 브랜드 인지도를 높인 캠페인 <div>
+                                <br>
+                            <p>
+                                혼마골프는 프리미엄 골프 용품을 전문으로 판매하는 글로벌 골프 브랜드입니다.
+                                광고주의 연간 브랜딩 캠페인을 담당하면서 신규 소재를 활용하여 브랜딩과 제품에 대한 유입을
+                                강화하고자 하는 광고주 요청이 있었고 광고 상품, 타겟팅 및 소재에 대한 테스트를 통해 조회 및
+                                도달 목적의 KPI 달성이 필요하였습니다.
+                            </p>
+                        </h3>
+                </div>
+            </section>
+
+            <section id="content">
+                <div class="portfolio__content">
+                    <div class="video">
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/Ho32kNk0mPI?si=GfU908tNr1U1GlWn" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" allowfullscreen style="position: absolute; width:100%; height:100%;">
+                        </iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/Ct4LgHDrFQg?si=W0YqpH8DEWcvxGGL" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" allowfullscreen style="position: absolute; width:100%; height:100%;">
+                        </iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/tfOi6Ka_X-g?si=m3YzvDNN21vL43sZ" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" allowfullscreen style="position: absolute; width:100%; height:100%;">
+                        </iframe>
+                    </div>
+                    <div class="name"></div>
+                </div>
+                <div class="portfolio__performance">
+                    <span>
+                        신규 소재를 운영하기 위한 상품, 타겟팅에 대한 성과 테스트를 진행하고 기효율 매체와 지면
+                        을 활용하여 트래픽을 확보하였습니다. 또한 검색량 높은 키워드 선점 후 브랜드 검색에 추가
+                        운영하여 지속적으로 쿼리수 높은 키워드를 발굴하였습니다.
+                    </span>
+                    <br><br>
+                    <em><br>Key perforamance </em>
+                    <br>
+                    <br>• 기존 소재 대비 CPV, VTR 개선 기록
+                    <br>• 제안 클릭수 대비 150% 초과 달성
+                    </p>
+                </div>
+                <div class="footer__portfolio">
+                    <div class="left">
+                        <p><a href="portfoilo02.html">머지맨션 UA 캠페인</a></p>
+                    </div>
+                    <div class="right">
+                        <h5><a href="portfoilo04.html">SPC삼립 신규 브랜드 런칭</a></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //portfolio -->
+
+    </main>
+    <!-- //main -->
+
+    <footer__port id="footer__port" role="contentinfo">
+        <div class="footer__port__inner">
+            <div class="footer__port__right">
+                <a href="index.html">&copy; 2024 HONGSEHOON <br /> </a>
+            </div>
+        </div>
+    </footer__port>
+    <!-- //footer__port -->
+
+    <script>
+        let time = document.getElementById("current-time");
+
+        setInterval(() =>{
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        },1000)
+    </script>
+    <script type="module" src="assets/js/main.js"></script>
+    
+</body>
+</html>
